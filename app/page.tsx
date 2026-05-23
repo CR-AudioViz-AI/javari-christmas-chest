@@ -1,7 +1,7 @@
 "use client";
 // app/page.tsx — Javari Christmas Chest · CR AudioViz AI · EIN 39-3646201 · May 2026
 import { useState } from "react";
-const T=[{"i": "\ud83d\udcb0", "l": "Valuation", "d": "Holiday collectible values", "h": "/value"}, {"i": "\ud83d\udccb", "l": "Inventory", "d": "Collection tracking", "h": "/inventory"}, {"i": "\ud83c\udf81", "l": "Gift Guide", "d": "Holiday gift recommendations", "h": "/gifts"}, {"i": "\u270d\ufe0f", "l": "Listing Writer", "d": "Marketplace listings", "h": "/listing"}];
+const T=[{"i": "\ud83d\udcb0", "l": "Valuation", "d": "Holiday collectible values", "h": "/value"}, {"i": "\ud83d\udccb", "l": "Inventory", "d": "Collection tracking", "h": "/inventory"}, {"i": "\ud83c\udf81", "l": "Gift Guide", "d": "Holiday gift recs", "h": "/gifts"}, {"i": "\u270d\ufe0f", "l": "Listing Writer", "d": "Marketplace listings", "h": "/listing"}];
 export default function P() {
   const [i,setI]=useState(""); const [o,setO]=useState(""); const [l,setL]=useState(false);
   async function go() { if(!i.trim())return; setL(true);setO("");
@@ -14,7 +14,7 @@ export default function P() {
       <a href="https://craudiovizai.com/auth/signup" style={{background:"#FF0800",color:"#fff",borderRadius:7,padding:"5px 14px",fontSize:12,fontWeight:700,textDecoration:"none"}}>Sign Up Free</a>
     </nav>
     <section style={{background:"linear-gradient(135deg,#1E3A5F,#040912)",padding:"48px 24px 40px",textAlign:"center"}}>
-      <h1 style={{fontSize:"clamp(22px,4vw,42px)",fontWeight:900,color:"#fff",margin:"0 0 10px",lineHeight:1.05}}>Christmas Collectibles<br/><span style={{color:"#FF0800"}}>and Holiday Decor</span></h1>
+      <h1 style={{fontSize:"clamp(22px,4vw,42px)",fontWeight:900,color:"#fff",margin:"0 0 10px",lineHeight:1.05}}>Christmas Chest<br/><span style={{color:"#FF0800"}}>Holiday Collectibles</span></h1>
       <p style={{color:"rgba(255,255,255,0.7)",fontSize:15,margin:0}}>Track, value, and document your holiday and Christmas collections.</p>
     </section>
     <section style={{maxWidth:700,margin:"0 auto",padding:"24px 20px 0"}}>
